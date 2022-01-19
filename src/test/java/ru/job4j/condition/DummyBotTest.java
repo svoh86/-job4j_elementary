@@ -26,7 +26,7 @@ public class DummyBotTest {
     @Test
     public void whenUnknownBot() {
         String in = "Добрый день";
-        String expected = "Это ставит меня в тупик. Задайте другой вопрос.";
+        String expected = "Это ставит меня в тупик. Задайте другой вопрос";
         String rsl = DummyBot.answer(in);
         Assert.assertEquals(expected, rsl);
     }
