@@ -26,7 +26,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenFind7() {
+    public void whenArrayHas7Then1() {
         int[] data = new int[] {5, 7, 3};
         int el = 7;
         int result = FindLoop.indexOf(data, el);
@@ -35,7 +35,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenFind3() {
+    public void whenArrayHas3From2To4Thenmin1() {
         int[] data = new int[] {5, 2, 10, 2, 4};
         int el = 3;
         int start = 2;
