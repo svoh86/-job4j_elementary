@@ -30,4 +30,28 @@ public class MatrixCheckTest {
         boolean rsl = MatrixCheck.monoHorizontal(board, row);
         Assert.assertFalse(rsl);
     }
+
+    @Test
+    public void whenHasMonoVertica() {
+        char[][] board = {
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+        };
+        int column = 2;
+        boolean rsl = MatrixCheck.monoVertical(board, column);
+        Assert.assertTrue(rsl);
+    }
+
+    @Test
+    public void whenNoMonoVertica() {
+        char[][] board = {
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+                {' ', ' ', ' '},
+        };
+        int column = 2;
+        boolean rsl = MatrixCheck.monoVertical(board, column);
+        Assert.assertFalse(rsl);
+    }
 }
