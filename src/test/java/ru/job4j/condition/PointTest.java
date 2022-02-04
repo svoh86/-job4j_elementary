@@ -31,4 +31,22 @@ public class PointTest {
         double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void when0and0and0To5and5and5Then8dot66() {
+        Point a = new Point(0, 0, 0);
+        Point b = new Point(5, 5, 5);
+        double expected = 8.66;
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
+    @Test
+    public void whenMin5andMin5andMin5To5and5and5Then17dot32() {
+        Point a = new Point(-5, -5, -5);
+        Point b = new Point(5, 5, 5);
+        double expected = 17.32;
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
 }
